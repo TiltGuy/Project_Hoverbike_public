@@ -221,7 +221,7 @@ public class HoverAntiGravReactor : MonoBehaviour
                 Vector3 gravity = -groundNormal * hoverGravity * height;
 
                 hoverbikeBody.AddForceAtPosition(force, hoverPoint.transform.position,ForceMode.Acceleration);
-                hoverbikeBody.AddForceAtPosition(gravity, hoverPoint.transform.position, ForceMode.Acceleration);
+                hoverbikeBody.AddForceAtPosition(gravity , hoverPoint.transform.position, ForceMode.Acceleration);
             }
             else
             {
